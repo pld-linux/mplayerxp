@@ -1,0 +1,10 @@
+--- mplayerxp-0.7.2-orig/mplayerxp/libmpdemux/asf_streaming.c	2007-11-17 13:43:35.000000000 +0100
++++ mplayerxp-0.7.2/mplayerxp/libmpdemux/asf_streaming.c	2009-04-10 11:21:56.830316207 +0200
+@@ -3,6 +3,7 @@
+ #include <string.h>
+ #include <unistd.h>
+ #include <errno.h>
++#include <limits.h>
+ 
+ #include "config.h"
+ #include "../mplayer.h"

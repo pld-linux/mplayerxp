@@ -1,0 +1,26 @@
+--- mplayerxp-0.7.2-orig/mplayerxp/configure	2009-01-25 09:00:03.000000000 +0100
++++ mplayerxp-0.7.2/mplayerxp/configure	2009-04-10 11:15:37.826905946 +0200
+@@ -1073,19 +1073,19 @@
+ /* Define this if your system has the llrint in "math.h" header file */
+ #ifndef HAVE_LLRINT
+ #define HAVE_LLRINT 1
+-static inline long long int llrint(double x)
++/*static inline long long int llrint(double x)
+ {
+     return (int)(x + (((int)x-x) < 0 ? -0.5 : 0.5));
+-}
++}*/
+ #endif
+ 
+ /* Define this if your system has the lrint in "math.h" header file */
+ #ifndef HAVE_LRINT
+ #define HAVE_LRINT 1
+-static inline long int lrint(double x)
++/*static inline long int lrint(double x)
+ {
+     return (int)(x + (((int)x-x) < 0 ? -0.5 : 0.5));
+-}
++}*/
+ #endif
+ 
+ /* Define this if your system has the HUGE in "math.h" header file */

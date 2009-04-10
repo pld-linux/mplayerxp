@@ -1,0 +1,19 @@
+--- mplayerxp-0.7.2-orig/mplayerxp/osdep/lrmi.h	2002-03-23 12:09:21.000000000 +0100
++++ mplayerxp-0.7.2/mplayerxp/osdep/lrmi.h	2009-04-10 11:43:47.496737137 +0200
+@@ -14,6 +14,16 @@
+ #ifndef LRMI_H
+ #define LRMI_H
+ 
++#if defined(__linux__)
++#ifndef TF_MASK
++#define TF_MASK X86_EFLAGS_TF
++#define IF_MASK X86_EFLAGS_IF
++#define IOPL_MASK X86_EFLAGS_IOPL
++#define VIF_MASK X86_EFLAGS_VIF
++#define VIP_MASK X86_EFLAGS_VIP
++#endif
++#endif
++
+ struct LRMI_regs
+ 	{
+ 	unsigned int edi;
