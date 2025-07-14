@@ -170,9 +170,9 @@ Pliki konfiguracyjne, strona manuala i dokumentacja HTML dla MPlayera.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 cp -f etc/codecs.conf etc/codecs.win32.conf
 
 # Set version #
